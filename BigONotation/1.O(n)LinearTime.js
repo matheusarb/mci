@@ -1,3 +1,4 @@
+"use strict";
 //1. First Big O Notation Paradigm --> BigO of O(n) --> LINEAR TIME to find something
 //(n) is an arbitrary input. It could be any word but, as convention, we use (n) when referring to Big O notation
 //O(n) - The most common Big O notation we find;
@@ -34,6 +35,7 @@ function findNemo(array) {
 
 //findNemo(largeArray);
 
+//Little showcase of other methods to loop through arrays
 function compressBox(boxes) {
   boxes.forEach(function (item) {
     console.log(item);
