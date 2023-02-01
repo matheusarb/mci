@@ -25,6 +25,7 @@ function findNemo(array) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === "nemo") {
       console.log("Found NEMO!");
+      break;
     }
   }
 
@@ -33,18 +34,20 @@ function findNemo(array) {
   //console.log("Call to find Nemo took " + (t1 - t0) + " milliseconds");
 }
 
+findNemo(everyone);
+
 //findNemo(largeArray);
 
 //Little showcase of other methods to loop through arrays
-function compressBox(boxes) {
-  boxes.forEach(function (item) {
-    console.log(item);
-  });
-}
+// function compressBox(boxes) {
+//   boxes.forEach(function (item) {
+//     console.log(item);
+//   });
+// }
 
-const compressBox2 = (box) => {
-  box.forEach((item) => console.log(item));
-};
+// const compressBox2 = (box) => {
+//   box.forEach((item) => console.log(item));
+// };
 
-console.log(compressBox(["box1", "box2", "box3"]));
-console.log(compressBox2(["1", "2", "3"]));
+// console.log(compressBox(["box1", "box2", "box3"]));
+// console.log(compressBox2(["1", "2", "3"]));
